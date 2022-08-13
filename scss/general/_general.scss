@@ -1,0 +1,42 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+body {
+    background-color: $bg;
+    font-size: $font-size-default;
+    font-family: $font-primary;
+}
+
+.conteiner {
+    width: 100%;
+    max-width:$width;
+    margin: 0 auto;
+    padding: 0 135px;
+
+    @include media($lg) {
+        padding: 0 $lg-padding;
+
+    }
+
+    @include media($md) {
+        padding: 0 $md-padding;
+
+    }
+
+    @include media($sm) {
+        padding: 0 $sm-padding;
+
+    }
+
+}
+
+.flex {
+    display: flex;
+    
+    @include media-reverse($mob_max) {
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+}

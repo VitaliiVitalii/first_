@@ -1,0 +1,22 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.logo {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 110px;
+    margin: 0 50px 0 0px;
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+
+    }
+
+    &__name {
+        width: 60px;
+        height: 15px;
+
+    }
+}

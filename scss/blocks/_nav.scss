@@ -1,0 +1,71 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+@include media-reverse($mob_max) {
+    .nav {
+        
+        &__list {
+            height: 100%;
+            align-items: center;
+            gap: 30px;
+    
+            @include media($md) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0 60px 0 0;
+        
+            }
+    
+        }
+    
+        &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: $primary;
+    
+        }
+    
+    }
+
+}
+
+@include media($mob) {
+    .nav {
+
+        &__list {
+            display: block;
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            left: -100%;
+            width: 300px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #ECEFF1;
+            box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+        }
+    
+        &__link {
+            display: block;
+            padding: 12px 24px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            background-color: #CFD8DC;
+            
+        }
+
+    }
+
+}

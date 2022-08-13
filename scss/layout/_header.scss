@@ -1,0 +1,26 @@
+
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.header {
+
+    &__background {
+            background-image: url(../../img/bg/first-screen-image.jpg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+            height: 100%;
+        }
+
+
+    &__wrapper {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        align-items: center;
+        margin-top: 30px;
+        background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+        backdrop-filter: blur(9px);
+
+    }
+
+}
