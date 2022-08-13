@@ -94,6 +94,7 @@ h6 {
 /********  Widths ***********/
 /********  Breakpoints ******/
 /***** Padding ******/
+/***** Z-index ******/
 body {
   background-color: #161926;
   font-size: 18px;
@@ -138,12 +139,22 @@ body {
   }
 }
 
-.header__background {
+.header {
+  position: relative;
+  z-index: 1;
+}
+.header::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
   background-image: url(../../img/bg/first-screen-image.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: cover;
-  height: 100%;
+  background-size: contain;
+  height: 1100px;
+  width: 100%;
+  top: -30px;
+  left: 0;
 }
 .header__wrapper {
   padding-top: 25px;
@@ -201,6 +212,22 @@ body {
     line-height: 24px;
     letter-spacing: 0.08em;
     color: #FFFFFF;
+    position: relative;
+  }
+  .nav__link:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    top: 20px;
+    background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+    opacity: 0.3;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  .nav__link:hover:after {
+    width: 44px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -3,14 +3,23 @@
 @use '../mixins/media' as *;
 
 .header {
+    position: relative;
+    z-index:$ground;
 
-    &__background {
-            background-image: url(../../img/bg/first-screen-image.jpg);
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            background-size: cover;
-            height: 100%;
-        }
+    &::after {
+        z-index:$z-header;
+        position: absolute;
+        content: "";
+        background-image: url(../../img/bg/first-screen-image.jpg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        height: 1100px;
+        width: 100%;
+        top: -30px;
+        left: 0;
+
+    }
 
 
     &__wrapper {
