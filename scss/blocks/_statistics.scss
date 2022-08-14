@@ -1,0 +1,106 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.statistics {
+
+    &__inner {}
+
+    &__inner-img {}
+
+    &__box {
+        position: absolute;
+        gap: 50px;
+        width: 100%;
+        max-width: 770px;
+        top: 24%;
+        right: -2px;
+        background: $bg;
+        opacity: 0.9;
+        padding: 45px 0 45px 55px;
+        align-items: flex-start;
+
+
+    }
+
+}
+
+.col-first {
+
+    &__items {
+        margin-bottom: 80px;
+    }
+
+    &__sum {
+        font-family: $font-secondary;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 72px;
+        text-align: center;
+        color: $primary;
+
+        span {
+            font-size: 40px;
+            line-height: 50px;
+            margin-right: 10px;
+
+        }
+
+    }
+
+    &__text {
+        text-align: center;
+        padding-top: 10px;
+
+    }
+
+}
+
+.col-second {
+    width: 100%;
+    max-width: 400px;
+
+    &__text {
+        margin-bottom: 30px;
+
+    }
+
+    &__btn {
+        top: 20px;
+
+    }
+
+}
+
+.border-line {
+    position: relative;
+
+    &::after {
+        content:'';
+        background-color:#85BBB1;
+        height: 1px;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+        
+    }
+
+    &::before {
+        content:'';
+        background-color:#85BBB1;
+        height: 1px;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+
+    }
+
+}
+
+.pad-norm {
+    margin-bottom: -2px;
+
+}       

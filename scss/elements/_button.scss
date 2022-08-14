@@ -1,4 +1,39 @@
 @use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.btn {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:$secondary;
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        left: 10px;
+        right: -7px;
+        top: 11px;
+        bottom: 0;
+        background: #53F3CD;
+        opacity: 0.3;
+
+        &:hover {
+            color: #02E0AB;
+            opacity: 0.3;
+
+        }
+
+    }
+    
+    &:hover {
+        color: #02E0AB;
+
+    }
+
+}
 
 
 

@@ -2,5 +2,59 @@
 @use '../mixins/media' as *;
 
 .main {
+    position: relative;
+    z-index: $z-main;
+    padding-top: 150px;
+    width: 100vw;
+
+    @include media($md) {
+        padding-top: 100px;
+
+        }
+
+    &__entry {
+        width: 100%;
+        max-width: 525px;
+
+        &-title {
+            font-size: 44px;
+            line-height: 52px;
+            padding: 0 0 20px 0;
+
+            @include media($mob) {
+                font-size: 40px;
+                line-height: 45px;
+                padding: 0 0 20px 0;
+            
+            }
+    
+        }
+        
+        &-desc {
+            width: 100%;
+            max-width: 440px;
+            padding: 0 0 50px 0;
+    
+        }
+
+        &-btn {
+            @include media($mob) {
+                left: 35%;
+
+            }
+
+        }
+
+    }
+    
+    &__statistics {
+        position: relative;
+        padding-top: 150px;
+
+    }
 
 }
+
+
+
+

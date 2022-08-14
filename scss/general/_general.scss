@@ -9,7 +9,7 @@ body {
 
 .conteiner {
     width: 100%;
-    max-width:$width;
+    max-width:1440px;
     margin: 0 auto;
     padding: 0 135px;
 
@@ -39,4 +39,28 @@ body {
 
     }
     
+}
+
+.title {
+    font-family:$font-secondary;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color:$primary;
+
+}
+
+.selection {
+    font-style: italic;
+    color: $secondary-light;
+
+}
+
+.text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color:$primary;
+    opacity: 0.8;
+
 }
