@@ -1,0 +1,43 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.quote {
+
+    &__desc {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        letter-spacing: 0.04em;
+        opacity: 1;
+        max-width: 800px;
+        width: 100%;
+        padding: 0px 100px 40px 0px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 81px;
+            left: -60px;
+            top: -30px;
+            background-image: url(../../img/svg/quotes.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+    }
+
+    &__text {
+        font-family: $font-secondary;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        color: $primary;
+
+    }
+
+}

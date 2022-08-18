@@ -5,6 +5,8 @@ body {
     background-color: $bg;
     font-size: $font-size-default;
     font-family: $font-primary;
+    overflow-x: hidden;
+    
 }
 
 .conteiner {
@@ -38,6 +40,11 @@ body {
         align-items: center;
 
     }
+    
+}
+
+.grid {
+    display: grid;
     
 }
 

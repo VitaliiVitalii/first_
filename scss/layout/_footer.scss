@@ -1,4 +1,31 @@
 @use '../variables/variables' as *;
 @use '../mixins/media' as *;
 
+.footer {
+    padding: 35px 0 30px 0;
 
+    &__wrapper {
+
+    }
+
+    &__text {
+        font-size: 14px;
+        opacity: 0.6;
+
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        opacity: 1;
+
+    }
+}
+
+.position {
+    margin-left: auto;
+    padding: 0 35px 0 0;
+
+}

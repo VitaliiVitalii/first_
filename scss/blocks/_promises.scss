@@ -1,0 +1,48 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.promises {
+
+    &__inner {}
+
+    &__inner-img {}
+
+    &__box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 770px;
+        width: 100%;
+        grid-row-gap: 70px;
+        grid-column-gap: 95px;
+        position: absolute;
+        bottom: 55px;
+        right: 0px;
+        background: #161926;
+        opacity: 0.9;
+        padding: 70px 0 70px 75px;
+
+    }
+
+    &__box-item {}
+
+    &__box-item-title {
+        font-size: 24px;
+        padding: 0 0 15px 0;
+
+    }
+
+    &__box-item-text {
+        max-width: 230px;
+    }
+
+    &__box-item-btn {
+
+    }
+}
+
+.btn-inner {
+    border: 1px solid #515773;
+    padding: 35px 85px 35px 90px;
+    width: 300px;
+    height: 90px;
+    
+}

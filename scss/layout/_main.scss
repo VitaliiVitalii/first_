@@ -53,6 +53,50 @@
 
     }
 
+    &__box {
+        padding-top: 120px;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+    }
+    
+    &__quote {
+        background-image: url(../img/bg/quote-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 400px;
+        height: 100%;
+        padding: 100px 0 100px 160px;
+        margin: 25px 0 0 0;
+
+    }
+
+    &__video {
+        padding: 125px 105px 0 105px;
+        width: 100%;
+
+    }
+
+    &__promises {
+        position: relative;
+        padding-top: 120px;
+        
+    }
+
+    &__reviews {
+        padding: 115px 0 0 0;
+        border-bottom: 1px solid #515773;
+
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 100px 0;
+        border-bottom: 1px solid #515773;
+
+    }
+
 }
 
 

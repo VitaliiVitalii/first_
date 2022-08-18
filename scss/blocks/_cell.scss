@@ -1,0 +1,25 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.cell-item {
+	width: 100%;
+	max-width: 570px;
+	padding: 0 0 0 35px;
+	border-top: 1px solid #515773;
+
+	&__title {
+		width: 100%;
+		max-width: 485px;
+		padding: 50px 0 30px 0;
+
+	}
+
+	&__text {
+		width: 100%;
+		max-width: 485px;
+		padding: 0 0 115px 0;
+
+	}
+
+}
+
