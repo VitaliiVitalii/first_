@@ -24,7 +24,30 @@
             background-image: url(../../img/svg/quotes.svg);
             background-repeat: no-repeat;
             background-size: cover;
+
+            @include media($sm) {
+                background-size: contain;
+                width: 80px;
+                height: 45px;
+                left: -6px;
+                top: -25px;
             
+            }
+            
+        }
+
+        @include media($mob) {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0px 20px 40px 0px;
+
+        }
+
+        @include media($sm) {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0px 20px 40px 0px;
+
         }
 
     }
@@ -37,6 +60,11 @@
         line-height: 20px;
         letter-spacing: 0.08em;
         color: $primary;
+
+        @include media($sm) {
+            font-size: 16px;
+    
+        }
 
     }
 

@@ -5,7 +5,15 @@
 
     &__box {
         max-width: 470px;
-        
+        padding: 0 40px 0 0;
+        min-width: 300px;
+
+        @include media($md) {
+            padding: 0 0 60px 0;
+            text-align: center;
+
+        }
+
     }
 
     &__box-title {
@@ -13,9 +21,14 @@
 
     }
 
-    &__box-text {}
+    &__form-wrapper {
+        @include media($mob) {
+        width: 100%;
 
-    &__form-wrapper {}
+        }
+
+    }
+
 }
 
 .form {
@@ -57,6 +70,7 @@
             color: $secondary;
 
         }
+
     }
 
     &__label {
@@ -73,6 +87,16 @@
         background-color:$bg;
         font-family:$font-primary;
 
+        @include media($mob) {
+            left: 33%;
+
+        }
+
+        @include media($mob) {
+            left: 25%;
+
+        }
+
     }
 
 }
@@ -82,4 +106,5 @@
     color: $secondary;
     top: -18px;
     font-size: 12px;
+
 }

@@ -11,7 +11,6 @@
 
 @include media($mob) {
     
-    /* стилизуем кнопку */
     .menu-btn {
         display: flex;
         align-items: center;
@@ -25,7 +24,6 @@
 
     }
     
-    /* добавляем "гамбургер" */
     .menu-btn>span,
     .menu-btn>span::before,
     .menu-btn>span::after {
@@ -49,23 +47,32 @@
     }
     
 
-    /* скрываем чекбокс */
     #menu-toggle {
         opacity: 0;
+
     }
 
     #menu-toggle:checked~.menu-btn>span {
         transform: rotate(45deg);
+        transition: 0.2s;
+        background-color: $bg;
+
     }
     
     #menu-toggle:checked~.menu-btn>span::before {
         top: 0;
         transform: rotate(0);
+        transition: 0.2s;
+        background-color: $bg;
+
     }
     
     #menu-toggle:checked~.menu-btn>span::after {
         top: 0;
         transform: rotate(90deg);
+        transition: 0.2Fs;
+        background-color: $bg;
+
     }
     
     #menu-toggle:checked~.nav__list {
