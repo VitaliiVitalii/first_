@@ -3,10 +3,6 @@
 
 .promises {
 
-    &__inner {}
-
-    &__inner-img {}
-
     &__box {
 
         position: absolute;
@@ -65,6 +61,7 @@
         width: 100%;
 
     }
+    
 }
 
 .btn-inner {
@@ -75,6 +72,7 @@
 
     &:hover  {
         border: 1px solid #02E0AB;
+
     }
     
 }

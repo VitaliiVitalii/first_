@@ -28,9 +28,9 @@ $md-padding: 35px;
 $lg-padding: 65px;
 
 /***** Z-index ******/
-$ground: 1;
-$z-header:$ground - 2;
-$z-main:$ground + 5;
+$ground: 0;
+$z-header:$ground - 1;
+$z-main:$ground + 1;
 
 
 

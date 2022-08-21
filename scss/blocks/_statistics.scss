@@ -3,10 +3,6 @@
 
 .statistics {
 
-    &__inner {}
-
-    &__inner-img {}
-
     &__box {
         position: absolute;
         gap: 50px;
@@ -19,14 +15,14 @@
         padding: 45px 0 45px 55px;
         align-items: flex-start;
 
-            @include media($sm) {
-                gap: 35px;
-                max-width: 300px;
-                top: 24%;
-                right: 33px;
-                padding: 15px 0 20px 15px;
+        @include media($sm) {
+            gap: 35px;
+            max-width: 300px;
+            top: 24%;
+            right: 5%;
+            padding: 15px 0 20px 15px;
 
-            }
+        }
 
     }
 

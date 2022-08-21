@@ -22,6 +22,11 @@
         cursor: pointer;
         z-index: 1;
 
+        @include media($sm) {
+            right: 15px;
+
+        }
+
     }
     
     .menu-btn>span,
@@ -54,7 +59,7 @@
 
     #menu-toggle:checked~.menu-btn>span {
         transform: rotate(45deg);
-        transition: 0.2s;
+        transition: 0.3s ease;
         background-color: $bg;
 
     }
@@ -62,7 +67,7 @@
     #menu-toggle:checked~.menu-btn>span::before {
         top: 0;
         transform: rotate(0);
-        transition: 0.2s;
+        transition: 0.3s ease;
         background-color: $bg;
 
     }
@@ -70,7 +75,7 @@
     #menu-toggle:checked~.menu-btn>span::after {
         top: 0;
         transform: rotate(90deg);
-        transition: 0.2Fs;
+        transition: 0.3s ease;
         background-color: $bg;
 
     }
@@ -78,6 +83,7 @@
     #menu-toggle:checked~.nav__list {
         visibility: visible;
         left: 0;
+
     }
 
 }
